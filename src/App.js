@@ -37,7 +37,7 @@ const App = () => {
           element={<Home details={details} setDetails={setDetails} />}
         />
         <Route
-          path="/createCensusData"
+          path="/createDetail"
           element={
             <CreateCensusData
               details={details}
@@ -47,7 +47,7 @@ const App = () => {
           }
         />
         <Route
-          path="/censusData"
+          path="/getDetails"
           element={
             <CensusData
               details={details}
@@ -57,7 +57,7 @@ const App = () => {
           }
         />
         <Route
-          path="/editCensusData"
+          path="/updateDetail"
           element={
             <EditCensusData
               details={details}
