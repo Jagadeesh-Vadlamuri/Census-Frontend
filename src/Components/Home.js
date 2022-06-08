@@ -9,7 +9,7 @@ import VpnKeyIcon from "@mui/icons-material/VpnKey";
 import { store } from "../App";
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
-const Home = ({details, setDetails}) => {
+const Home = () => {
   const URL = "https://census-userdata.herokuapp.com";
   const navigate = useNavigate();
 
@@ -22,9 +22,9 @@ const Home = ({details, setDetails}) => {
       try {
         if(values.email=='testemail@gmail.com'){
           navigate(`/getDetails`)
-          setDetails({
-            email: values.email
-          })
+          // setDetails({
+          //   email: values.email
+          // })
         }
         await authService.login(values.email, values.password).then(
           () => {
