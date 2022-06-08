@@ -21,14 +21,14 @@ const Home = ({details, setDetails}) => {
     onSubmit: async (values) => {
       try {
         if(values.email=='testemail@gmail.com'){
-          navigate(`/censusData`)
+          navigate(`/getDetails`)
           setDetails({
             email: values.email
           })
         }
         await authService.login(values.email, values.password).then(
           () => {
-            navigate(`/getDetails`);
+            navigate(`/censusData`);
             // window.location.reload();
           },
           (error) => {
