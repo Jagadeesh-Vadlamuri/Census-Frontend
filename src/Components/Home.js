@@ -28,7 +28,7 @@ const Home = ({details, setDetails}) => {
         }
         await authService.login(values.email, values.password).then(
           () => {
-            navigate(`/censusData`);
+            navigate(`/getDetails`);
             // window.location.reload();
           },
           (error) => {
