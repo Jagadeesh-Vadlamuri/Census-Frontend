@@ -88,7 +88,7 @@ const CensusData = ({ formik, details, setDetails }) => {
                   <Link
                     onClick={() => handleEdit(item._id)}
                     className="btn btn-success"
-                    to="/editCensusData"
+                    to="/updateDetail"
                   >
                     Edit
                   </Link>

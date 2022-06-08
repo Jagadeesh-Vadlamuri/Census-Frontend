@@ -204,7 +204,7 @@ const CreateCensusData = () => {
                       Close
                     </button>
                     <Link
-                      to="/censusData"
+                      to="/getDetails"
                       className="btn btn-light mt-4 mx-2"
                       style={{ backgroundColor: "black", color: "white" }}
                     >
@@ -216,7 +216,7 @@ const CreateCensusData = () => {
             />
           )}
         </form>
-        <Link to="/censusData" className="btn btn-light" style={{backgroundColor: 'black', color: 'white'}}>Census Details</Link>
+        <Link to="/getDetails" className="btn btn-light" style={{backgroundColor: 'black', color: 'white'}}>Census Details</Link>
       </div>
     </div>
   );

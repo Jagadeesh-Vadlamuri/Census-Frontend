@@ -24,7 +24,7 @@ const Navbar = ({details, setDetails}) => {
         <div className="container-fluid d-flex justify-content-around align-items-center mt-1">
         <Link
             className="btn btn-light mt-3"
-            to="/createCensusData"
+            to="/createDetail"
             style={
               currentUrl.split("/")[convertedUrl.length - 1] == "signUp" ||
               currentUrl.split("/")[convertedUrl.length - 1] == ""
