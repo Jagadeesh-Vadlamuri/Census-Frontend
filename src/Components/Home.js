@@ -20,8 +20,8 @@ const Home = ({details, setDetails}) => {
     },
     onSubmit: async (values) => {
       try {
-        if(values.email=='admin@gmail.com'){
-          // navigate(`/getItems`)
+        if(values.email=='testemail@gmail.com'){
+          navigate(`/censusData`)
           setDetails({
             email: values.email
           })
